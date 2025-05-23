@@ -3,6 +3,7 @@ logs/
 .ipynb_checkpoints/
 __pycache__
 *.txt
+!requirements.txt
 *.png
 *.pyc
 *.pdf
