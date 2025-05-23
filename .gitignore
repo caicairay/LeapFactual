@@ -1,0 +1,10 @@
+*.pt
+logs/
+.ipynb_checkpoints/
+__pycache__
+*.txt
+*.png
+*.pyc
+*.pdf
+*.csv
+*.svg

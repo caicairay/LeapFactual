@@ -1,0 +1,47 @@
+model_params:
+    name: WAE_MMD
+    in_channels: 3
+    total_latent_dim: 64
+    num_classes: 0
+    img_size: 128
+    hidden_dims: [16, 32, 64, 128, 256]
+    reg_weight: 10.
+    kernel_type: 'imq'
+    latent_var: 2.
+
+data_params:
+    name: Galaxy10
+    image_size: 128
+    train_root: ../Galaxy10/galaxy10_data/image_data_train/
+    test_root: ../Galaxy10/galaxy10_data/image_data_test/
+    train_batch_size: 128
+    val_batch_size:   128
+    test_batch_size:  128
+    num_workers: 8
+    pin_memory: True
+    download: False
+
+exp_params:
+    name: GAN
+    LR:   0.0003
+    LR_2: 0.00005
+    weight_decay: 0.001
+    scheduler_gamma:   0.99
+    scheduler_gamma_2: 0.99
+    perceptual_weight: 10.
+    gan_weight: 1.
+    adv_weight: 0.
+    recon_weight: 1.
+    gradient_clip_val: .1
+
+trainer_params:
+    accelerator: 'gpu'
+    # devices: [5]
+    max_epochs: 300
+    log_every_n_steps: 10
+    check_val_every_n_epoch: 10
+    # strategy: 'ddp_find_unused_parameters_true'
+
+logging_params:
+    save_dir: "logs/"
+    name: "Galaxy10_VAE"

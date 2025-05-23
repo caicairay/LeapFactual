@@ -1,0 +1,6 @@
+[submodule "external_pkgs/Morpho-MNIST"]
+	path = external_pkgs/Morpho-MNIST
+	url = https://github.com/dccastro/Morpho-MNIST.git
+[submodule "external_pkgs/stylegan3"]
+	path = external_pkgs/stylegan3
+	url = https://github.com/NVlabs/stylegan3.git
