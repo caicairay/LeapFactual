@@ -1,7 +1,8 @@
 # LeapFactual
 This repository is the official implementation of _LeapFactual: Robust Visual Counterfactual Explanation Using Conditional Flow Matching_.
 
-<img src="./asserts/final_demo.png" alt="drawing" width="500"/>
+<!-- <img src="./asserts/final_demo.png" alt="drawing" width="500"/> -->
+![demo](./asserts/final_demo.png)
 
 ## Setup / Installation guide
 ```bash
@@ -13,14 +14,16 @@ pip install -r requirements.txt
 Check the notebook `./Toy_Experiment/Experiment_Square.ipynb`
 
 ### Quantitative Assessment - MorphoMNIST
-<img src="./asserts/MorphoMNIST_examples.png" alt="drawing" width="300"/>
+<!-- <img src="./asserts/MorphoMNIST_examples.png" alt="drawing" width="300"/> -->
+![morphoMNIST](./asserts/MorphoMNIST_examples.png)
 
 1. Download the [MorphoMNIST](https://github.com/dccastro/Morpho-MNIST?tab=readme-ov-file#datasets) data and place it in `./Morpho_MNIST/morphoMNIST_data`. We use the same datasets as used in [Morpho-MNIST paper](https://arxiv.org/abs/1809.10780).
 2. Check the notebook `./Morpho_MNIST/Experiment_MorphoMNIST.ipynb`
 
 
 ### Model Improvement - Galaxy10
-<img src="./asserts/galaxy_examples.png" alt="drawing" width="350"/>
+<!-- <img src="./asserts/galaxy_examples.png" alt="drawing" width="350"/> -->
+![galaxy](./asserts/galaxy_examples.png)
 
 #### Preparation
 1. Download the [Galaxy10 DECaLS](https://astronn.readthedocs.io/en/latest/galaxy10.html) data and place it in `./Galaxy10/galaxy10_data`.
@@ -77,7 +80,8 @@ Check the notebook `./Toy_Experiment/Experiment_Square.ipynb`
 
 
 ### Generalization - FFHQ
-<img src="./asserts/FFHQ_compare.png" alt='drawing' width = "500"/>
+<!-- <img src="./asserts/FFHQ_compare.png" alt='drawing' width = "500"/> -->
+![galaxy](./asserts/FFHQ_compare.png)
 
 1. download the checkpoint `stylegan3-r-ffhq-1024x1024.pkl` from the [StyleGAN3 pretrained models](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/research/models/stylegan3/files) website and place it in `FFHQ/checkpoints`.
 2. Check the notebook `FFHQ/Experiment_FFHQ.ipynb`
