@@ -1,6 +1,6 @@
 <h1>
 <p align="center">
-    <img src="assets/MatterGenlogo_.png" alt="MatterGen logo" width="600"/>
+    <img src="assets/leapfactual_logo_.png" alt="LeapFactual logo" width="600"/>
 </p>
 </h1>
 
