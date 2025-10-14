@@ -1,6 +1,6 @@
 <h1>
 <p align="center">
-    <img src="assets/leapfactual_logo_.png" alt="LeapFactual logo" width="600"/>
+    <img src="asserts/leapfactual_logo_.png" alt="LeapFactual logo" width="600"/>
 </p>
 </h1>
 
