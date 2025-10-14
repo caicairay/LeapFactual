@@ -1,4 +1,9 @@
-# LeapFactual
+<h1>
+<p align="center">
+    <img src="assets/MatterGenlogo_.png" alt="MatterGen logo" width="600"/>
+</p>
+</h1>
+
 This repository is the official implementation of _LeapFactual: Robust Visual Counterfactual Explanation Using Conditional Flow Matching_.
 
 <!-- <img src="./asserts/final_demo.png" alt="drawing" width="500"/> -->
