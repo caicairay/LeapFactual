@@ -35,6 +35,8 @@ pip install -r requirements.txt
 ### Toy Experiment - Square <a name="toy_square"></a>
 Check the notebook `./Toy_Experiment/Experiment_Square.ipynb`
 
+---
+
 ### Quantitative Assessment - MorphoMNIST <a name="morphomnist"></a>
 <!-- <img src="./assets/MorphoMNIST_examples.png" alt="drawing" width="300"/> -->
 ![morphoMNIST](./assets/MorphoMNIST_examples.png)
@@ -42,6 +44,7 @@ Check the notebook `./Toy_Experiment/Experiment_Square.ipynb`
 1. Download the [MorphoMNIST](https://github.com/dccastro/Morpho-MNIST?tab=readme-ov-file#datasets) data and place it in `./Morpho_MNIST/morphoMNIST_data`. We use the same datasets as used in [Morpho-MNIST paper](https://arxiv.org/abs/1809.10780).
 2. Check the notebook `./Morpho_MNIST/Experiment_MorphoMNIST.ipynb`
 
+---
 
 ### Model Improvement - Galaxy10  <a name="galaxy"></a>
 <!-- <img src="./assets/galaxy_examples.png" alt="drawing" width="350"/> -->
@@ -99,7 +102,7 @@ Check the notebook `./Toy_Experiment/Experiment_Square.ipynb`
    ``` 
    to train the classifier using the 20% data with the generated robust CE samples.
 
-
+---
 
 ### Generalization - FFHQ  <a name="ffhq"></a>
 <!-- <img src="./assets/FFHQ_compare.png" alt='drawing' width = "500"/> -->
@@ -107,6 +110,8 @@ Check the notebook `./Toy_Experiment/Experiment_Square.ipynb`
 
 1. download the checkpoint `stylegan3-r-ffhq-1024x1024.pkl` from the [StyleGAN3 pretrained models](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/research/models/stylegan3/files) website and place it in `FFHQ/checkpoints`.
 2. Check the notebook `FFHQ/Experiment_FFHQ.ipynb`
+
+---
 
 ## Structure of the repository  <a name="structure"></a>
 
