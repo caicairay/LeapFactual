@@ -3,25 +3,39 @@
     <img src="assets/leapfactual_logo_.png" alt="LeapFactual logo" width="500"/>
 </p>
 </h1>
-<h4 align="center">
 
+<h4 align="center">
+    
 [![arXiv](https://img.shields.io/badge/arXiv-2312.03687-blue.svg?logo=arxiv&logoColor=white.svg)](https://arxiv.org/abs/2510.14623)
 </h4>
+
 This repository is the official implementation of _LeapFactual: Reliable Visual Counterfactual Explanation Using Conditional Flow Matching_.
+_LeapFactual_ is a model-agnostic counterfactual explanation algorithm based on conditional flow matching that generates reliable and informative counterfactuals even under model–truth divergence, extending explainability to human-in-the-loop systems.
 
 <!-- <img src="./assets/final_demo.png" alt="drawing" width="500"/> -->
 ![demo](./assets/final_demo.png)
 
-## Setup / Installation guide
+
+## Table of Contents
+- [Installation](#installation)
+- [Experiments](#experiments)
+    - [Toy Experiment](#toy_square)
+    - [MorphoMNIST](#morphomnist)
+    - [Galaxy10](#galaxy)
+    - [FFHQ](#ffhq)
+- [Structure of the repository](#structure)
+- [Citation](#citation)
+
+## Installation
 ```bash
 pip install -r requirements.txt
 ```
 
 ## Experiments
-### Toy Experiment - Square
+### Toy Experiment - Square <a name="toy_square"></a>
 Check the notebook `./Toy_Experiment/Experiment_Square.ipynb`
 
-### Quantitative Assessment - MorphoMNIST
+### Quantitative Assessment - MorphoMNIST <a name="morphomnist"></a>
 <!-- <img src="./assets/MorphoMNIST_examples.png" alt="drawing" width="300"/> -->
 ![morphoMNIST](./assets/MorphoMNIST_examples.png)
 
@@ -29,7 +43,7 @@ Check the notebook `./Toy_Experiment/Experiment_Square.ipynb`
 2. Check the notebook `./Morpho_MNIST/Experiment_MorphoMNIST.ipynb`
 
 
-### Model Improvement - Galaxy10
+### Model Improvement - Galaxy10  <a name="galaxy"></a>
 <!-- <img src="./assets/galaxy_examples.png" alt="drawing" width="350"/> -->
 ![galaxy](./assets/galaxy_examples.png)
 
@@ -87,14 +101,14 @@ Check the notebook `./Toy_Experiment/Experiment_Square.ipynb`
 
 
 
-### Generalization - FFHQ
+### Generalization - FFHQ  <a name="ffhq"></a>
 <!-- <img src="./assets/FFHQ_compare.png" alt='drawing' width = "500"/> -->
 ![galaxy](./assets/FFHQ_compare.png)
 
 1. download the checkpoint `stylegan3-r-ffhq-1024x1024.pkl` from the [StyleGAN3 pretrained models](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/research/models/stylegan3/files) website and place it in `FFHQ/checkpoints`.
 2. Check the notebook `FFHQ/Experiment_FFHQ.ipynb`
 
-## Structure of the repository
+## Structure of the repository  <a name="structure"></a>
 
 ```bash
 .
