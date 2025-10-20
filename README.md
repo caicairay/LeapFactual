@@ -4,7 +4,7 @@
 </p>
 </h1>
 
-This repository is the official implementation of _LeapFactual: Robust Visual Counterfactual Explanation Using Conditional Flow Matching_.
+This repository is the official implementation of _LeapFactual: Reliable Visual Counterfactual Explanation Using Conditional Flow Matching_.
 
 <!-- <img src="./assets/final_demo.png" alt="drawing" width="500"/> -->
 ![demo](./assets/final_demo.png)
