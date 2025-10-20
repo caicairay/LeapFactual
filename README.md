@@ -90,3 +90,84 @@ Check the notebook `./Toy_Experiment/Experiment_Square.ipynb`
 
 1. download the checkpoint `stylegan3-r-ffhq-1024x1024.pkl` from the [StyleGAN3 pretrained models](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/research/models/stylegan3/files) website and place it in `FFHQ/checkpoints`.
 2. Check the notebook `FFHQ/Experiment_FFHQ.ipynb`
+
+## Structure of the repository
+
+```bash
+.
+├── FFHQ                                  # files concerning experiments with FFHQ
+│   ├── Experiment_FFHQ.ipynb             # experiment structure
+│   ├── FFHQ_quantitative_eval.py         # quantitative evaluation including history plot
+│   ├── FFHQ_quantitative_eval_ref.py     # quantitative evaluation 
+│   ├── FFHQ_train_flow.py                # train model for this experiment
+│   └── exp_utils.py                      # utilities like Human_Annotator
+│
+├── Galaxy10                              # files concerning experiments with Galaxy10
+│   ├── galaxy10_data                     # data preprocessing files
+│   ├── Galaxy10_generate_data.py         # generate synthetic data
+│   └── Galaxy10_train_flow_mlp.py        # train model for this experiment
+│
+├── Morpho_MNIST                          # files concerning experiments with MorphoMNIST
+│   └── Experiment_MorphoMNIST.ipynb      # experiment setup 
+│
+├── Toy_Experiment                        # files concerning toy experiments 
+│   └── Experiment_Square.ipynb           # experiment setup 
+│
+├── assets                                # image-files for README  
+│   └── ...                 
+│
+├── external_pkgs                         # links to external git modules 
+│   ├── Morpho-MNIST                      
+│   └── stylegan3                  
+│
+├── training_scripts                      # scripts necessary for training
+│   ├── configs                           # experiment configs
+│   │   └── ... 
+│   ├── data                              # scripts for torch-datasets
+│   │   └── ...
+│   ├── experiments                       # experiment scripts for classifier and GAN experiments
+│   │   └── ...
+│   ├── models                            # model files 
+│   │   ├── VAE 
+│   │   │   └── ...
+│   │   └── classifiers
+│   │       └── ...
+│   ├── train_classifier.py               # training scripts for classifier-experiments
+│   └── train_vaes.py                     # training scripts for VAE-experiments
+│           
+│ 
+├── .gitignore                            # ignore files that cannot commit to Git
+├── .gitmodules                           # Git submodules
+├── LICENSE                               # license file  
+├── README.md                             # project description   
+└── requirements.txt                      # dependencies  
+```
+
+## Citation
+If you use our method or code from this repository, please cite our paper:
+Zhuo Cao, Xuan Zhao*, Lena Krieger*, Hanno Scharr, Ira Assent, (2025, December). LeapFactual: Reliable Visual Counterfactual Explanation Using Conditional Flow Matching. Accepted for publication at the *The Thirty-Ninth Annual Conference on Neural Information Processing Systems,
+                    (NeurIPS) 2025*.
+```
+@unpublished{cao2025leapfactual,
+  title        =    {LeapFactual: Reliable Visual Counterfactual Explanation Using Conditional Flow Matching},
+  author       =    {Cao, Zhuo and Zhao, Xuan and Krieger, Lena and Scharr, Hanno and Assent, Ira},
+  url          =    {https://neurips.cc/virtual/2025/poster/119174},
+  year         =    {2025},
+  note         =    {Accepted for publication at The Thirty-Ninth Annual Conference on Neural Information Processing Systems,
+                    (NeurIPS) 2025}
+}
+```
+## License
+
+### Code
+This work is licensed under the [Apache 2.0 License](LICENSE). This license is valid for all code files implemented by us.
+
+### Data
+We used the following datasets:
+- [FFHQ](https://github.com/NVlabs/ffhq-dataset) is made available under [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) by NVIDIA Corporation
+- [Galaxy10 DECaLS](https://astronn.readthedocs.io/en/latest/galaxy10.html) published by [Lintott et al., 2008](https://arxiv.org/abs/0804.4483)
+- [MorphoMNIST](https://github.com/dccastro/Morpho-MNIST) is licensed under [MIT License](https://github.com/dccastro/Morpho-MNIST/blob/main/LICENSE)
+
+Data that we generated for our toy experiments are licensed under [Creative Commons Zero (CC0) license](https://creativecommons.org/public-domain/cc0/).
+
+
