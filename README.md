@@ -10,8 +10,7 @@
 </h4>
 
 This repository is the official implementation of _LeapFactual: Reliable Visual Counterfactual Explanation Using Conditional Flow Matching_.
-_LeapFactual_ is a model-agnostic counterfactual explanation algorithm based on conditional flow matching that generates reliable and informative counterfactuals even under model–truth divergence, extending explainability to human-in-the-loop systems.
-
+_LeapFactual_ is a model-agnostic algorithm that generates reliable, actionable counterfactual explanations using conditional flow matching, overcoming key limitations of existing methods in high-stakes and human-in-the-loop domains.
 <!-- <img src="./assets/final_demo.png" alt="drawing" width="500"/> -->
 ![demo](./assets/final_demo.png)
 
