@@ -6,7 +6,7 @@
 
 <h4 align="center">
     
-[![arXiv](https://img.shields.io/badge/arXiv-2312.03687-blue.svg?logo=arxiv&logoColor=white.svg)](https://arxiv.org/abs/2510.14623)
+[![arXiv](https://img.shields.io/badge/arXiv-2510.14623-blue.svg?logo=arxiv&logoColor=white.svg)](https://arxiv.org/abs/2510.14623)
 </h4>
 
 This repository is the official implementation of _LeapFactual: Reliable Visual Counterfactual Explanation Using Conditional Flow Matching_.
